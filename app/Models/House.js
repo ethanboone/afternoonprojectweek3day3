@@ -22,8 +22,8 @@ export default class House {
               <p class="card-text">${this.description} | ${this.address}</p>
           </div>
           <div class="px-3 pb-3 d-flex justify-content-between">
-              <button type="button" class="btn btn-danger" onclick="app.carsController.deleteCar('${this.id}')">Contact</button>
-              <button type="button" class="btn btn-info" onclick="app.carsController.bid('${this.id}')">Favorite</button>
+              <button type="button" class="btn btn-danger" onclick="app.carsController.deleteHouse('${this.id}')">Delete</button>
+              <button type="button" class="btn btn-info" onclick="app.carsController.contact('${this.id}')">Contact</button>
           </div>
       </div>
     </div>

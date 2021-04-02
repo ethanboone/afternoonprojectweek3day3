@@ -8,23 +8,22 @@ class HousesService {
     ProxyState.houses = [...ProxyState.houses, house]
   }
 
-  bid(id) {
+  deleteHouse(id) {
     // find the Car
-    let car = ProxyState.cars.find(car => car.id === id)
-    // make the change
-    car.price += 100
+    let house = ProxyState.houses.find(house => house.id === id)
+    // make the changes
 
     // trigger the cycle (this can only be the top level properties of ProxyState) to update the page
-    ProxyState.cars = ProxyState.cars
+    ProxyState.houses = houses.filter(house => house.id != house)
   }
-  bid(id) {
+  contact(id) {
     // find the Car
     let car = ProxyState.cars.find(car => car.id === id)
     // make the change
     car.price += 100
 
     // trigger the cycle (this can only be the top level properties of ProxyState) to update the page
-    ProxyState.cars = ProxyState.cars
+    ProxyState.houses = ProxyState.houses
   }
 }
 

@@ -45,6 +45,10 @@ export default class HousesController {
     $('#new-house-form').modal('hide')
   }
 
+  deleteHouse() {
+    housesService.deleteHouse(id)
+  }
+
   contact(id) {
     housesService.contact(id)
   }
